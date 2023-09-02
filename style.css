@@ -1,0 +1,595 @@
+@font-face {
+    font-family: gou;
+    src: url(./gustavo-medium-webfont.88fe21a8.ttf);
+}
+@font-face {
+    font-family: kon;
+    src: url(./BaselGrotesk-Regular.9f43b1b6.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(./image1.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow:inset 0px -200px 100px 10px rgba(0, 0, 0, 0.471);
+}
+#page1 #overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.027);
+}
+#page1 #box{
+    height:0.1%;
+    width: 100%;
+    box-shadow: 0px 0px 50px 50px #020202;
+    position: absolute;
+    background-color: black;
+    z-index: 100;
+    bottom: 0;
+}
+#page1 #div{
+    height: 12%;
+    width: 35%;
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    transform: translate(-50,-50%);
+}
+#div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+#nav{
+    height: 10%;
+    width: 85%;
+    
+    position: absolute;
+    top:17%;
+    left: 35%;
+    transform: translate(-35%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav svg{
+    height: 70%;
+    width: 20%;
+}
+#nav #nav1{
+    height: 100%;
+    width: 30%;
+   
+    margin-right: -20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#nav1 h5{
+    font-size: 0.7vw;
+    color: white;
+    font-family: kon;
+    width: fit-content;
+    letter-spacing: .3px;
+    position: relative;
+}
+#nav1 h5::after{
+    content:"";
+    height:1px;
+    background-color: white;
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 0;
+    transition: all ease 0.7s;
+
+}
+#nav1 h5:hover::after{
+    width: 100%;
+}
+#nav2{
+    height: 25%;
+    width: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all ease 0.3s;
+    justify-content: space-evenly;
+}
+#nav2:hover{
+    height: 35%;
+    justify-content: space-between;
+}
+#nav2 #line{
+    height: 2px;
+    width: 80%;
+    background-color: white;
+    margin-top: 15%;
+    transition: all ease 0.7s;
+}
+#nav3{
+    height: 5%;
+    width: 10%;
+
+    position: absolute;
+    right: 3%;
+    top: 37%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#nav3 h5{
+    color: white;
+    font-size: 1.1vw;
+    font-weight: 200;
+    width: fit-content;
+    position: relative;
+}
+#nav3 i{
+    color: white;
+}
+#nav3 h5::after{
+    content:"";
+    height:0.5px;
+    background-color:#D8A414;
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 0;
+    transition: all ease 0.5s;
+ 
+}
+#nav3 h5:hover::after{
+    width: 100%; 
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+   
+   
+}
+#page2 #nav{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    height: 10%;
+    width: 40%;
+    
+}
+#page2 #nav h5{
+    font-size: 1.4vw;
+    color:white;
+    font-weight: 400;
+}
+#page2 #nav h4{
+    font-size: 1.4vw;
+    color:#b2b1b1;
+    font-weight: 400;
+}
+#page2 #nav h3{
+    font-size: 1.4vw;
+    color:#b2b1b1;
+    font-weight: 400;
+}
+#nav h4:hover{
+    color: white;
+    
+}
+#nav h3:hover{
+    color: white;
+    
+}
+#page2 #line{
+    height: 1.5px;
+    width: 70%;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #b2b1b1;
+}
+#nav h5:hover{
+    color: white;
+    
+}
+#line #ine{
+    background-color: white;
+    height: 100%;
+    width: 17%;
+    position: absolute;
+    transition: all ease 0.7s;
+}
+#page2 #img1{
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    background-image: url(./img2.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow:inset 0px 0px  150px 60px black;
+    opacity:1;
+    transition: all ease 0.5s;
+}
+#page2 #img2{
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    background-image: url(./img3.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow:inset 0px -100px 100px 10px black;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+#page2 #img3{
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    background-image: url(./img4.jfif);
+    background-position: center;
+    background-size: cover;
+    box-shadow:inset 0px -100px 100px 10px black;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.overlay h1{
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 4.2vw;
+    font-family: kon;
+}
+.overlay h2{
+    color: white;
+    position: absolute;
+    top: 27%;
+    left: 23%;
+    font-size: 4.2vw;
+    font-family: kon;
+    
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.43);
+}
+.octagon-button {
+    position:absolute;
+    top: 25%;
+    right: 15%;
+    display: inline-block;
+    padding: 20px 40px;
+    border: none;
+    background-color:rgba(0, 0, 0, 0);
+    border: 2px solid #b2b1b1;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    z-index: 3;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    transition: all ease 0.7s;
+    font-family: kon;
+
+}
+
+.octagon-button:hover{
+    border:2px solid #F3BC02;
+}
+.octagon-button i{
+    padding-left: 10px;
+    font-size: 14px;
+}
+#page2 #nove{
+    z-index: 600;
+    position: absolute;
+    
+    bottom: 5%;
+    left: 17%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#page2 #nove h6{
+    font-size: 1.2vw;
+    color: white;
+    width: fit-content;
+    position: relative;
+    font-weight: 200;
+    font-family: kon;
+}
+#page2 #nove h6::after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 0.7px;
+    background-color: #D8A414;
+    transition: all ease 0.5s;
+}
+#page2 #nove h6:hover::after{
+    width: 100%;
+}
+#page2 #nove i{
+    font-size: 1.2vw;
+    color: white;
+    padding-right: 50px;
+}
+#page3{
+    height: 150vh;
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+#page3 #box{
+    height:0.1%;
+    width: 100%;
+    box-shadow: 0px 0px 30px 20px #020202;
+    position: absolute;
+    background-color: black;
+    z-index: 100;
+    top: 0;
+    
+}
+#page3 h5{
+    color: white;
+    font-size: 1.2vw;
+    font-family: kon;
+    z-index: 150;
+    
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    letter-spacing: 1px;
+}
+#page3 h1{
+    font-size: 7vw;
+    color: white;
+    position: absolute;
+    top: 18%;
+    left: 40%;
+    font-family: gou;
+    font-weight: 100;
+}
+#page3 h2{
+    font-size: 7vw;
+    color: white;
+    position: absolute;
+    top: 26%;
+    left: 47%;
+    font-family: gou;
+    font-weight: 100;
+}
+#page3 img{
+    height: 40%;
+    width: 48%;
+    position: absolute;
+    top: 45%;
+    left: 47%;
+}
+#page3 p{
+    color: white;
+    font-size: 1.2vw;
+    font-family: kon;
+    z-index: 150;
+    position: absolute;
+    top:47%;
+    left: 15%;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 1.1vw;
+    font-family: kon;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+#page3 .octagon-button {
+    position:absolute;
+    top:70%;
+    right: 65%;
+    display: inline-block;
+    padding: 20px 40px;
+    border: none;
+    background-color:rgba(0, 0, 0, 0);
+    border: 2px solid #b2b1b1;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 3;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    transition: all ease 0.7s;
+    font-family: kon;
+
+}
+
+#page3 .octagon-button:hover{
+    border:2px solid #F3BC02;
+}
+#page3 .octagon-button i{
+    padding-left: 10px;
+    font-size: 14px;
+}
+#page4{
+    height: 170vh;
+    width: 100%;
+    position: relative;
+}
+#page4 h5{
+    position: absolute;
+    right: 15%;
+    top: 18%;
+    font-family: gou;
+    font-size: 1.17vw;
+    font-weight: 100;
+}
+#page4 img{
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    height: 45vw;
+}
+#page4 h3{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    font-family: gou;
+    font-size: 4vw;
+    font-weight: 100;
+}
+#page4 h2{
+    position: absolute;
+    top: 40%;
+    left: 57%;
+    font-family: gou;
+    font-size: 4vw;
+    font-weight: 100;
+}
+#page4 h6{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    font-family: gou;
+    font-size: 4vw;
+    font-weight: 100;
+}
+#page4 p{
+    position: absolute;
+    top: 58%;
+    left: 65%;
+    color: #474646;
+    font-size: 1.1vw;
+    line-height:1.5vw
+    
+}
+#page4 .octagon-button {
+    position:absolute;
+    top:70%;
+    right: 17.5%;
+    display: inline-block;
+    padding: 20px 40px;
+    border: none;
+    background-color:rgba(0, 0, 0, 0);
+    border: 2px solid #b2b1b1;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 3;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    transition: all ease 0.7s;
+    font-family: kon;
+
+}
+
+#page4 .octagon-button:hover{
+    border:2px solid #F3BC02;
+}
+#page4 .octagon-button i{
+    padding-left: 10px;
+    font-size: 14px;
+}
+#page5{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#page5 h5{
+    position: absolute;
+    left: 15%;
+    top: 2%;
+    font-family: gou;
+    font-size: 1.17vw;
+    font-weight: 100;
+}
+#page5 img{
+    position: absolute;
+    top: 2%;
+    right: 12%;
+    height: 45vw; 
+}
+#page5 h3{
+    position: absolute;
+    top: 25%;
+    right: 53%;
+    font-family: gou;
+    font-size: 4.1vw;
+    font-weight: 100;
+}
+#page5 h2{
+    position: absolute;
+    top: 33%;
+    right: 52%;
+    font-family: gou;
+    font-size: 4.1vw;
+    font-weight: 100;
+}
+#page5 h6{
+    position: absolute;
+    top: 41%;
+    right: 71%;
+    font-family: gou;
+    font-size: 4.1vw;
+    font-weight: 100;
+}
+#page5 p{
+    position: absolute;
+    top: 60%;
+    left: 22%;
+    color: #474646;
+    font-size: 1.18vw;
+    line-height:1.7vw  
+}
+#page5 .octagon-button {
+    position:absolute;
+    top:85%;
+    right: 61%;
+    display: inline-block;
+    padding: 20px 40px;
+    border: none;
+    background-color:rgba(0, 0, 0, 0);
+    border: 2px solid #b2b1b1;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 3;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    transition: all ease 0.7s;
+    font-family: kon;
+
+}
+
+#page5 .octagon-button:hover{
+    border:2px solid #F3BC02;
+}
+#page5 .octagon-button i{
+    padding-left: 10px;
+    font-size: 14px;
+}
+#page6{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
